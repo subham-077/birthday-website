@@ -644,12 +644,6 @@ body {
 #mewmew.animationOp{
     animation: opacityHeart 1s 1s forwards;
 }
-
-
-
-
-
-
 @media screen and (max-width: 658px)   {
 
     .flag__birthday .flag__left {
@@ -837,6 +831,7 @@ body {
 .boxMail .boxMail-container{
     position: absolute;
     width: 750px;
+    max-width: 95%;
     height: 500px;
     display: flex;
     margin: 0;
@@ -1055,148 +1050,65 @@ body {
     color: white;
     z-index: 10000000000000000;
 }
-
 /* MOBILE VERSION */
+/* ================= MOBILE RESPONSIVE ================= */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     body {
-    overflow-y: auto; 
-    overflow-x: hidden;
-    }
-
-    #wrapper {
-        background-size: 40px 40px;
-    overflow-y: auto; 
-    overflow-x: hidden;
+        overflow-x: hidden;
     }
 
     .content {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-        padding-top: 1.5rem;
+        text-align: center;
     }
 
-    .content .left,
-    .content .right {
+    .left, .right {
         width: 100%;
     }
 
-    .title {
-        font-size: 1.6rem;
-        letter-spacing: 4px;
+    .title h1 {
+        font-size: 42px;
     }
 
-    .title .hat img{
-        width: 80px;
+    .image {
+        width: 250px !important;
+        height: 250px !important;
+        margin: auto;
     }
 
-    .content .right .image {
-        width: 220px;
-        height: 220px;
-        border-width: 4px;
+    .box__account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .name {
-        padding: 4px 10px;
-        bottom: -10px;
-    }
-
-    .name span {
-        font-size: 1.1rem;
-    }
-
-    #btn__letter {
-        width: 220px;
-        padding: 8px 10px;
-        font-size: 0.9rem;
-    }
-
-    .date__of__birth {
-        width: 240px !important;
-        height: 40px !important;
-    }
-
-    .date__of__birth span {
-        font-size: 1rem;
-    }
-
-    .cricle {
-        top: 10px;
-        right: 10px;
-        transform: scale(0.7);
-    }
-
-    .right .balloon_one img,
-    .right .balloon_two img {
-        width: 60px !important;
-    }
-
-    .decorate_star {
+    .balloon_one,
+    .balloon_two {
         display: none;
     }
 
-    /* LETTER POPUP */
-    .box__letter .letter__border {
-        width: 95vw;
-        height: auto;
-        padding: 12px;
+    .cricle {
+        transform: scale(0.8);
+        margin-top: 20px;
     }
 
-    .letter__border .letter .title__letter {
-        font-size: 1.5rem;
+    .btn-main {
+        width: 80%;
     }
 
-    .letter__border .letter .content__letter {
-        flex-direction: column;
-        padding-bottom: 20px;
+    /* Letter popup */
+    .boxMail-container {
+        width: 90% !important;
+        height: auto !important;
+        margin: auto;
     }
 
-    .content__letter .left,
-    .content__letter .right {
-        width: 100%;
-        border: none;
+    .card2 h2 {
+        font-size: 14px !important;
         padding: 10px;
     }
 
-    .content__letter .right .text__letter {
-        font-size: 0.9rem;
-        margin-top: 10px;
-    }
-
-    #mewmew {
-        max-width: 30vw;
-        width: 120px;
-        height: auto;
-        right: 20px;
-    }
-
-    /* MAIL BOX */
-    .boxMail .boxMail-container {
-        width: 95vw;
-        height: auto;
-        flex-direction: column;
-    }
-
-    .boxMail .boxMail-container .card1,
-    .boxMail .boxMail-container .card2 {
-        width: 100%;
-        height: auto;
-        position: relative;
-        transform: none !important;
-    }
-
-    .boxMail .boxMail-container .card1 h3 {
-        font-size: 1.5rem;
-    }
-
-    .boxMail .boxMail-container .card2 h2 {
-        font-size: 1rem;
-    }
-
-    .boxMail .fa-xmark {
-        font-size: 24px;
-        padding: 8px 15px;
-    }
 }
