@@ -1099,6 +1099,69 @@ body {
         width: 80%;
     }
 
+     /* LETTER POPUP */
+    .box__letter .letter__border {
+        width: 95vw;
+        height: auto;
+        padding: 12px;
+    }
+
+    .letter__border .letter .title__letter {
+        font-size: 1.5rem;
+    }
+
+    .letter__border .letter .content__letter {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .content__letter .left,
+    .content__letter .right {
+        width: 100%;
+        border: none;
+        padding: 10px;
+    }
+
+    .content__letter .right .text__letter {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+    #mewmew {
+        max-width: 30vw;
+        width: 120px;
+        height: auto;
+        right: 20px;
+    }
+
+    /* MAIL BOX */
+    .boxMail .boxMail-container {
+        width: 95vw;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .boxMail .boxMail-container .card1,
+    .boxMail .boxMail-container .card2 {
+        width: 100%;
+        height: auto;
+        position: relative;
+        transform: none !important;
+    }
+
+    .boxMail .boxMail-container .card1 h3 {
+        font-size: 1.5rem;
+    }
+
+    .boxMail .boxMail-container .card2 h2 {
+        font-size: 1rem;
+    }
+
+    .boxMail .fa-xmark {
+        font-size: 24px;
+        padding: 8px 15px;
+    }
+}
     /* Letter popup */
     .boxMail-container {
         width: 90% !important;
